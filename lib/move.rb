@@ -12,8 +12,10 @@ def input_to_index(input)
   input.to_i
   if (input % 1 == 0)
     input = input - 1
+    input
   else
     input = -1
+    input
   end
 end
 
