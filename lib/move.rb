@@ -14,6 +14,12 @@ def input_to_index(input)
     index = input - 1
   else
     index = -1
+  end
+end
+
+def move(board, index, char = "X")
+  board[index] = char
+  board
 end
 
 
