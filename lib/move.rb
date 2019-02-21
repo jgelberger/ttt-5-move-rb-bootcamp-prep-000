@@ -10,10 +10,10 @@ end
 
 def input_to_index(input)
   input.to_i
-  if (input <= 9 && input >=1)
-    index = input - 1
+  if (input %1 == 0)
+    input = input - 1
   else
-    index = -1
+    input = -1
   end
 end
 
